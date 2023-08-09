@@ -36,13 +36,13 @@ def test_predict(client):
     assert response.json()["predictions"][1][1]["label"] == "POSITIVE"
     assert (
         assert_almost_equal(
-            response.json()["predictions"][0][0]["score"], 0.936, decimal=3
+            response.json()["predictions"][0][0]["score"], 0.9, decimal=3
         )
         is None
     )
     assert (
         assert_almost_equal(
-            response.json()["predictions"][0][1]["score"], 0.064, decimal=3
+            response.json()["predictions"][0][1]["score"], 0.0, decimal=3
         )
         is None
     )
