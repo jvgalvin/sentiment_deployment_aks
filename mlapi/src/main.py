@@ -11,7 +11,7 @@ from redis import asyncio as aioredis
 from pydantic import BaseModel, validator
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline
 
-print("\n")
+print("\n\n")
 model_path = "./distilbert-base-uncased-finetuned-sst2"
 model = AutoModelForSequenceClassification.from_pretrained(model_path)
 tokenizer = AutoTokenizer.from_pretrained(model_path)
